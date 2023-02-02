@@ -4,7 +4,7 @@ interface Contact {
     clone(name: string): Contact // Define method on an interface and define type on parameter. Another way to write it is using "Function Signature"
 }
 
-// Add Contact type to the source paramete => source: Contact
+// Add Contact type to the source parameter => source: Contact
 // Without (source: Contact): "Contact", the return type is not gonna be the same as Contact
 function clone(source: Contact): Contact {
     return Object.apply({}, source);
